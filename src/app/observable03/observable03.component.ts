@@ -15,7 +15,7 @@ export class Observable03Component implements OnInit {
 
   makeSubscription(): void {
 
-    this.myObservable = Observable.create(function (observer) {
+    this.myObservable = new Observable<number>(function (observer) {
       let i: number = 0;
       observer.next(i++); // 0
       observer.next(i++); // 1

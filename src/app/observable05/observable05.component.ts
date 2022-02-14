@@ -7,6 +7,8 @@ import { Observable, Subscription } from 'rxjs';   // importare questo modulo
   templateUrl: './observable05.component.html',
   styleUrls: ['./observable05.component.css']
 })
+
+
 export class Observable05Component implements OnInit {
   myObservable: Observable<number>;
 
@@ -19,7 +21,7 @@ export class Observable05Component implements OnInit {
 
   makeSubscription(): void {
 
-    this.myObservable = Observable.create(function (observer) {
+    this.myObservable = new Observable<number>(function (observer) {
       let i: number = 0;
       observer.next(i++); // 0
       observer.next(i++); // 1

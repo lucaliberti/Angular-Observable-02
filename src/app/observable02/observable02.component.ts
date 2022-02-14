@@ -39,7 +39,7 @@ export class Observable02Component implements OnInit {
     //  (x: number) => console.log('Observer2bis: ho ricevuto il dato: ' + x)
     //);
     
-    //modo4
+    //modo4 : modo compatto
     //this.mySubscription=interval(1000).subscribe(this.myObserver);
 
   }
@@ -49,7 +49,6 @@ export class Observable02Component implements OnInit {
   }
 
   constructor() { }
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }
